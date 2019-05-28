@@ -134,7 +134,7 @@
                     android:layout_weight="1"
                     android:drawableTop="@mipmap/people_myplan_icon"
                     android:gravity="bottom|center_horizontal"
-                    android:text="我的计划"
+                    android:text="我的订单"
                     android:textSize="18sp" />
 
                 <TextView
@@ -185,7 +185,7 @@
                     android:layout_weight="1"
                     android:drawableTop="@mipmap/my_qa"
                     android:gravity="bottom|center_horizontal"
-                    android:text="我的猿问"
+                    android:text="我的记录"
                     android:textSize="18sp" />
             </LinearLayout>
 

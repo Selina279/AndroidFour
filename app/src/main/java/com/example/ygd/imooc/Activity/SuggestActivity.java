@@ -79,3 +79,6 @@ public class SuggestActivity extends AppCompatActivity {
         SingleVolleyRequestQueue.getInstance(this).getRequestQueue().cancelAll("A");
     }
 }
+
+
+

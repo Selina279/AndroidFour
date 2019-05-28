@@ -23,6 +23,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.ygd.imooc.Activity.Activity_Buy;
+import com.example.ygd.imooc.Activity.Activity_StudyHistory;
 import com.example.ygd.imooc.Activity.LoginActivity;
 import com.example.ygd.imooc.Activity.MyCollectActivity;
 import com.example.ygd.imooc.Activity.SettingActivity;
@@ -136,7 +138,10 @@ public class MineFragment extends Fragment {
     public class BtClick implements View.OnClickListener{
         @Override
         public void onClick(View v) {
-            Toast.makeText(mContext, "正在开发中..", Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(mContext, "正在开发中..", Toast.LENGTH_SHORT).show();
+
+
         }
     }
 
@@ -170,11 +175,28 @@ public class MineFragment extends Fragment {
             }
         });
 
-        tv2.setOnClickListener(new BtClick());
+        tv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(mContext, Activity_Buy.class);
+                startActivity(intent);
+            }
+        });
         tv3.setOnClickListener(new BtClick());
         tv4.setOnClickListener(new BtClick());
         tv5.setOnClickListener(new BtClick());
-        tv6.setOnClickListener(new BtClick());
+
+        /*
+         *  Arvin
+         *  我的历史记录
+         */
+        tv6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(mContext, Activity_StudyHistory.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

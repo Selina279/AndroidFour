@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/line1"
+    tools:context=".Activity.Activity_confirm">
+<!--付款的页面-->
+    <!-- listview，购物车里面的东西有可能比较多，需要用listview来进行显示 -->
+    <!--Arvin-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#808080"
+            android:dividerHeight="0.5dp"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">         <!-- 全选的布局 -->
+
+        <CheckBox
+            android:id="@+id/all_chekbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="全选" />         <!-- 合计的布局 -->
+        <TextView
+            android:id="@+id/sumTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="合计:￥88"
+            android:textColor="#F63A19" />         <!-- 去结算的布局 -->
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="删除" />
+        <TextView
+            android:id="@+id/jiesuan_button"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="结算" />
+    </LinearLayout>
+</LinearLayout>

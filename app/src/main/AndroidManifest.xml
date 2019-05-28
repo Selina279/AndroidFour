@@ -27,6 +27,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Activity.Activity_Buy"></activity>
+        <activity android:name=".Activity.Activity_StudyHistory" />
         <activity
             android:name=".Activity.ClassProjActivity"
             android:label="@string/title_activity_class_proj"
@@ -79,8 +81,7 @@
         <activity
             android:name=".Activity.SuggestActivity"
             android:label="@string/title_activity_suggest"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activity.OnlineHelpActivity"
             android:label="@string/title_activity_online_help"
