@@ -42,7 +42,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import de.greenrobot.dao.query.QueryBuilder;
-
+//注释简单
 public class ClassProjActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private VedioListAdapter vedioListAdapter;

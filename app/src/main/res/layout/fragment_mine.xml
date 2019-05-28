@@ -123,7 +123,7 @@
                     android:clickable="true"
                     android:drawableTop="@mipmap/people_mycourse_icon"
                     android:gravity="bottom|center_horizontal"
-                    android:text="我的收藏"
+                    android:text="我的好友（静）"
                     android:textSize="18sp" />
 
                 <TextView
@@ -134,7 +134,7 @@
                     android:layout_weight="1"
                     android:drawableTop="@mipmap/people_myplan_icon"
                     android:gravity="bottom|center_horizontal"
-                    android:text="我的计划"
+                    android:text="我的订单"
                     android:textSize="18sp" />
 
                 <TextView
